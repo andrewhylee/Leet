@@ -34,11 +34,11 @@ var rightSideView_accepted = function (root) {
   pre(root, 0);
   return res;
 
-  function pre(node, he) {
+  function pre(node, h) {
     if (!node) return;
-    res[he] = node.val;
-    pre(node.left, he + 1);
-    pre(node.right, he + 1);
+    res[h] = node.val;
+    pre(node.left, h + 1);
+    pre(node.right, h + 1);
   }
 };
 
